@@ -3,8 +3,8 @@ import freetype
 import codecs
 from sets import Set
 
-face = freetype.Face('droid.ttf')
-f = codecs.open('translated.xml', encoding='utf-8')
+face = freetype.Face('YOURTTF.ttf')
+f = codecs.open('INPUT_TEXT_FILE', encoding='utf-8')
 s = Set([])
 
 for line in f:
