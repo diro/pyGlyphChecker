@@ -1,10 +1,13 @@
 #coding=utf-8
+import sys
 import freetype
 import codecs
 from sets import Set
 
-face = freetype.Face('YOURTTF.ttf')
-f = codecs.open('INPUT_TEXT_FILE', encoding='utf-8')
+#cmdargs = str(sys.argv)
+
+face = freetype.Face(sys.argv[1])
+f = codecs.open(sys.argv[2], encoding='utf-8')
 s = Set([])
 
 for line in f:
